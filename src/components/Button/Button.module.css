@@ -1,0 +1,27 @@
+.btn {
+    display: block;
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background-color: var(--btn-color);
+    color: inherit;
+    box-shadow: 10px 10px 8px 2px var(--dark-grey-color);
+    transition: color, background-color var(--transition-timing-function);
+}
+
+
+.btn:hover .btn:focus {
+    background-color: var(--btn-hover);
+    color: var(--white-color);
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+    .btn:active {
+        background-color: var(--btn-active);
+        color: var(--white-color);
+    }
+}
